@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #1e1e1e;
+  width: 400px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4dabf7;
+}
+
+.input-box {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #eee;
+  outline: none;
+}
+
+.input-box input:focus {
+  border-color: #4dabf7;
+}
+
+.input-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4dabf7;
+  color: #121212;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: #3a95e0;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filterBtn {
+  background: none;
+  border: 1px solid #444;
+  color: #ccc;
+  padding: 5px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.filterBtn.active {
+  background-color: #4dabf7;
+  color: #121212;
+  border-color: #4dabf7;
+}
+
+#taskList {
+  list-style: none;
+}
+
+#taskList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+#taskList li.completed .taskText {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.taskText {
+  flex: 1;
+  margin: 0 10px;
+  word-break: break-word;
+}
+
+.task-buttons button {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.task-buttons button:hover {
+  color: #4dabf7;
+}
+
+.counts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
